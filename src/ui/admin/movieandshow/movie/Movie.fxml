@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.CheckComboBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.admin.movieandshow.movie.MovieController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b20710" height="577.0" layoutX="723.0" layoutY="24.0" stroke="BLACK" strokeType="INSIDE" width="278.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="43.0" stroke="BLACK" strokeType="INSIDE" width="1000.0" />
+      <ImageView fitHeight="31.0" fitWidth="93.0" layoutX="38.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/PINOYFLIX.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="moviebtn" layoutX="150.0" layoutY="9.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Movies" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="tvbtn" layoutX="222.0" layoutY="9.0" mnemonicParsing="false" onAction="#tvbtnHandler" style="-fx-background-color: black;" text="TV Shows" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="usersbtn" layoutX="309.0" layoutY="9.0" mnemonicParsing="false" onAction="#usersBtnHandler" style="-fx-background-color: black;" text="Users" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1a1a1" height="559.0" layoutY="42.0" stroke="BLACK" strokeType="INSIDE" width="724.0" />
+      <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="971.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/Netflix-avatar.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="movietable" layoutX="2.0" layoutY="43.0" prefHeight="559.0" prefWidth="720.0">
+        <columns>
+          <TableColumn fx:id="movieidcolumn" prefWidth="192.0" text="MovieID" />
+          <TableColumn fx:id="titlecolumn" prefWidth="94.0" text="Title" />
+            <TableColumn fx:id="releasedatecolumn" prefWidth="103.0" text="Release Date" />
+            <TableColumn fx:id="classificationcolumn" prefWidth="114.0" text="Content Rating" />
+            <TableColumn fx:id="genrecolumn" minWidth="0.0" prefWidth="91.0" text="Genre" />
+            <TableColumn fx:id="popularitycolumn" prefWidth="125.0" text="Popularity Score" />
+        </columns>
+      </TableView>
+      <TextField fx:id="titletextfield" layoutX="738.0" layoutY="66.0" prefHeight="43.0" prefWidth="248.0" promptText="Title" style="-fx-border-color: black;" />
+      <JFXButton fx:id="createbutton" buttonType="RAISED" layoutX="738.0" layoutY="292.0" onAction="#createMovie" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 25;" text="Create" textFill="#831010">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="updatebutton" buttonType="RAISED" layoutX="872.0" layoutY="292.0" onAction="#updateMovie" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 25;" text="Update" textFill="#831010">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="deletebutton" buttonType="RAISED" layoutX="788.0" layoutY="343.0" onAction="#deleteMovie" prefHeight="37.0" prefWidth="148.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 25;" text="Delete" textFill="#831010">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <DatePicker fx:id="releasedate" layoutX="738.0" layoutY="122.0" prefHeight="43.0" prefWidth="248.0" promptText="Release Date" />
+      <ComboBox fx:id="contentratingbox" layoutX="738.0" layoutY="229.0" prefHeight="43.0" prefWidth="248.0" promptText="Content Rating" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b20710" height="216.0" layoutX="723.0" layoutY="400.0" stroke="BLACK" strokeType="INSIDE" width="278.0" />
+      <JFXButton fx:id="showgenrebutton" buttonType="RAISED" layoutX="748.0" layoutY="443.0" onAction="#showgenrebutton" prefHeight="39.0" prefWidth="228.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 25;" text="Show Genre " textFill="#831010">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="showcrbutton" buttonType="RAISED" layoutX="748.0" layoutY="501.0" onAction="#showMovieContentRating" prefHeight="39.0" prefWidth="228.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 25;" text="Show Content Rating" textFill="#831010">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Button fx:id="logoutbutton" blendMode="MULTIPLY" layoutX="971.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutUser" prefHeight="25.0" prefWidth="20.0" />
+      <CheckComboBox fx:id="genrecombo" layoutX="738.0" layoutY="175.0" prefHeight="43.0" prefWidth="248.0" title="Genres" />
+   </children>
+</AnchorPane>

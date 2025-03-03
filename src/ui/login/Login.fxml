@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.login.LoginController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="1069.0" layoutX="-567.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-fullview.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/PINOYFLIX.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="179.0" fitWidth="234.0" layoutX="133.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="500.0" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: white;">
+         <children>
+            <TextField fx:id="usernametextfield" layoutX="69.0" layoutY="228.0" prefHeight="38.0" prefWidth="362.0" promptText="Username / Email" style="-fx-background-color: transparent; -fx-border-color: #831010;" />
+            <PasswordField fx:id="passwordtextfield" layoutX="69.0" layoutY="300.0" prefHeight="38.0" prefWidth="362.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #831010;" />
+            <FontAwesomeIcon glyphName="USER" layoutX="40.0" layoutY="258.0" size="20" wrappingWidth="20.449999809265137" />
+            <FontAwesomeIcon glyphName="KEY" layoutX="40.0" layoutY="329.0" size="20" wrappingWidth="20.449999809265137" />
+            <JFXButton fx:id="loginbutton" buttonType="RAISED" layoutX="69.0" layoutY="367.0" onAction="#loginbuttonHandler" prefHeight="38.0" prefWidth="362.0" style="-fx-background-color: black; -fx-text-fill: #db0000; -fx-background-radius: 25;" text="Login" textFill="#831010">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <Label layoutX="77.0" layoutY="99.0" prefHeight="49.0" prefWidth="375.0" text="Welcome to PinoyFlix">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="143.0" layoutY="148.0" prefHeight="38.0" prefWidth="214.0" text="Access your account">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="signupbutton" blendMode="SRC_ATOP" layoutX="282.0" layoutY="414.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#signupbuttonHandler" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: white;" text="Sign Up" textFill="#ec0000">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="158.0" layoutY="416.0" prefHeight="22.0" prefWidth="129.0" text="New to PinoyFlix?">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="75.0" layoutY="101.0" opacity="0.25" prefHeight="49.0" prefWidth="375.0" text="Welcome to PinoyFlix">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

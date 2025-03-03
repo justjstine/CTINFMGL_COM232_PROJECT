@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: black; -fx-border-color: dimgray;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alerts.LogoutController">
+   <children>
+      <Label layoutX="48.0" layoutY="131.0" prefHeight="38.0" prefWidth="301.0" text="Are you sure you want to log out?" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="68.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="49.0" layoutX="178.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Netflix-avatar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="93.0" layoutX="150.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/PINOYFLIX.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="proceedLogoutButton" buttonType="RAISED" layoutX="141.0" layoutY="180.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#proceedLogout" prefHeight="25.0" prefWidth="115.0" style="-fx-background-radius: 25; -fx-background-color: D32F2F;" text="Proceed" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\almad\\Downloads\\openjfx-21.0.6_windows-x64_bin-sdk\\javafx-sdk-21.0.6\\lib\\javafx.fxml.jar",
+        "c:\\Users\\almad\\Downloads\\openjfx-21.0.6_windows-x64_bin-sdk\\javafx-sdk-21.0.6\\lib\\javafx.graphics.jar",
+        "c:\\Users\\almad\\Downloads\\openjfx-21.0.6_windows-x64_bin-sdk\\javafx-sdk-21.0.6\\lib\\javafx.media.jar",
+        "c:\\Users\\almad\\Downloads\\openjfx-21.0.6_windows-x64_bin-sdk\\javafx-sdk-21.0.6\\lib\\javafx.swing.jar",
+        "c:\\Users\\almad\\Downloads\\openjfx-21.0.6_windows-x64_bin-sdk\\javafx-sdk-21.0.6\\lib\\javafx.web.jar",
+        "c:\\Users\\almad\\Downloads\\openjfx-21.0.6_windows-x64_bin-sdk\\javafx-sdk-21.0.6\\lib\\javafx.base.jar",
+        "c:\\Users\\almad\\Downloads\\openjfx-21.0.6_windows-x64_bin-sdk\\javafx-sdk-21.0.6\\lib\\javafx.controls.jar",
+        "c:\\Users\\almad\\Downloads\\openjfx-21.0.6_windows-x64_bin-sdk\\javafx-sdk-21.0.6\\lib\\javafx-swt.jar",
+        "c:\\Program Files\\Java\\javafx-sdk-21.0.6\\lib\\javafx.base.jar",
+        "c:\\Program Files\\Java\\javafx-sdk-21.0.6\\lib\\javafx.controls.jar",
+        "c:\\Program Files\\Java\\javafx-sdk-21.0.6\\lib\\javafx.fxml.jar",
+        "c:\\Program Files\\Java\\javafx-sdk-21.0.6\\lib\\javafx.graphics.jar",
+        "c:\\Program Files\\Java\\javafx-sdk-21.0.6\\lib\\javafx.media.jar",
+        "c:\\Program Files\\Java\\javafx-sdk-21.0.6\\lib\\javafx.swing.jar",
+        "c:\\Program Files\\Java\\javafx-sdk-21.0.6\\lib\\javafx.web.jar",
+        "c:\\Program Files\\Java\\javafx-sdk-21.0.6\\lib\\javafx-swt.jar",
+        "c:\\Program Files\\Java\\JavaFX Assets\\controlsfx-8.40.11-javadoc.jar",
+        "c:\\Program Files\\Java\\JavaFX Assets\\fontawesomefx-8.2.jar",
+        "c:\\Program Files\\Java\\JavaFX Assets\\jfoenix-9.0.10.jar",
+        "c:\\Program Files\\Java\\JavaFX Assets\\mysql-connector-java-8.0.18.jar",
+        "c:\\Program Files\\Java\\JavaFX Assets\\controlsfx-8.40.14\\controlsfx-8.40.14.jar",
+        "src/ui/main/**/*.jar",
+        "c:\\Program Files\\Java\\JavaFX Assets\\controlsfx-11.2.1.jar"
+    ]
+}
