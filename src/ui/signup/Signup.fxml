@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.signup.SignupController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="1069.0" layoutX="-567.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-fullview.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/PINOYFLIX.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="179.0" fitWidth="234.0" layoutX="133.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="500.0" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: black;">
+         <children>
+            <TextField fx:id="usernametextfield" blendMode="LIGHTEN" layoutX="69.0" layoutY="228.0" prefHeight="38.0" prefWidth="362.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #831010; -fx-text-fill: white; -fx-font-weight: bold;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <PasswordField fx:id="passwordtextfield" layoutX="69.0" layoutY="278.0" prefHeight="38.0" prefWidth="362.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #831010; -fx-font-weight: bold; -fx-text-fill: white;" />
+            <FontAwesomeIcon glyphName="USER" layoutX="40.0" layoutY="258.0" size="20" wrappingWidth="20.449999809265137" />
+            <FontAwesomeIcon glyphName="KEY" layoutX="40.0" layoutY="329.0" size="20" wrappingWidth="20.449999809265137" />
+            <JFXButton fx:id="createaccountbutton" buttonType="RAISED" layoutX="154.0" layoutY="500.0" onAction="#addAccount" prefHeight="38.0" prefWidth="191.0" style="-fx-background-color: #800000; -fx-text-fill: white; -fx-background-radius: 25;" text="Create Account" textFill="#f4f4f4" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="77.0" layoutY="99.0" prefHeight="49.0" prefWidth="375.0" text="Sign Up to PinoyFlix">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5606060461564497" endY="1.0" startX="0.5568181678201213">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" opacity="0.01291793305426836" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="143.0" layoutY="148.0" prefHeight="38.0" prefWidth="214.0" text="Create your Account" textFill="#a92c2c">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailtextfield" layoutX="69.0" layoutY="328.0" prefHeight="38.0" prefWidth="362.0" promptText="Email Address" style="-fx-background-color: transparent; -fx-border-color: #831010; -fx-font-weight: bold; -fx-text-fill: white;" />
+            <TextField fx:id="firstnametextfield" layoutX="69.0" layoutY="378.0" prefHeight="38.0" prefWidth="178.0" promptText="First Name" style="-fx-background-color: transparent; -fx-border-color: #831010; -fx-font-weight: bold; -fx-text-fill: white;" />
+            <TextField fx:id="lastnametextfield" layoutX="253.0" layoutY="378.0" prefHeight="38.0" prefWidth="178.0" promptText="Last Name" style="-fx-background-color: transparent; -fx-border-color: #831010; -fx-font-weight: bold; -fx-text-fill: white;" />
+            <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="25.0" layoutY="21.0" onAction="#backButtonHandler" prefHeight="30.0" prefWidth="76.0" ripplerFill="WHITE" style="-fx-background-color: #800000; -fx-text-fill: white; -fx-background-radius: 10;" text="Back" textFill="#f4f4f4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ComboBox fx:id="plantypecombo" layoutX="69.0" layoutY="428.0" prefHeight="38.0" prefWidth="178.0" promptText="Plan Type" style="-fx-background-color: black; -fx-border-color: #831010; -fx-font-weight: bold;" />
+            <ComboBox fx:id="paymentmethodcombo" layoutX="253.0" layoutY="428.0" prefHeight="38.0" prefWidth="178.0" promptText="Payment Method" style="-fx-background-color: black; -fx-border-color: #831010; -fx-font-weight: bold;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
