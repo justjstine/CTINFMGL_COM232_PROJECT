@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.admin.user.payment.PaymentController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b20710" height="577.0" layoutX="723.0" layoutY="24.0" stroke="BLACK" strokeType="INSIDE" width="278.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="43.0" stroke="BLACK" strokeType="INSIDE" width="1000.0" />
+      <ImageView fitHeight="31.0" fitWidth="93.0" layoutX="38.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/PINOYFLIX.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="moviebtn" layoutX="150.0" layoutY="9.0" mnemonicParsing="false" onAction="#moviebuttonHandler" style="-fx-background-color: black;" text="Movies" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="tvbtn" layoutX="222.0" layoutY="9.0" mnemonicParsing="false" style="-fx-background-color: black;" text="TV Shows" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="usersbtn" layoutX="309.0" layoutY="9.0" mnemonicParsing="false" onAction="#usersBtnHandler" style="-fx-background-color: black;" text="Users" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1a1a1" height="559.0" layoutY="42.0" stroke="BLACK" strokeType="INSIDE" width="724.0" />
+      <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="971.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/Netflix-avatar.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="paymenttable" layoutX="2.0" layoutY="43.0" prefHeight="551.0" prefWidth="720.0">
+        <columns>
+          <TableColumn fx:id="paymentidcolumn" prefWidth="345.0" text="PaymentID" />
+            <TableColumn fx:id="paymentmethodcolumn" prefWidth="374.0" text="Payment Method " />
+        </columns>
+      </TableView>
+      <TextField fx:id="paymenttextfield" layoutX="738.0" layoutY="66.0" prefHeight="43.0" prefWidth="248.0" promptText="Payment Method" style="-fx-border-color: black;" />
+      <JFXButton fx:id="addpaymentbutton" buttonType="RAISED" layoutX="753.0" layoutY="134.0" onAction="#addPayment" prefHeight="39.0" prefWidth="212.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 25;" text="Add Payment Method" textFill="#831010">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="updatebutton" buttonType="RAISED" layoutX="752.0" layoutY="183.0" onAction="#updatePayment" prefHeight="39.0" prefWidth="212.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 25;" text="Update" textFill="#831010">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="deletebutton" buttonType="RAISED" layoutX="752.0" layoutY="235.0" onAction="#deletePayment" prefHeight="39.0" prefWidth="212.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 25;" text="Delete" textFill="#831010">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="backbutton" buttonType="RAISED" layoutX="784.0" layoutY="533.0" onAction="#backbuttonHandler" prefHeight="39.0" prefWidth="148.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 25;" text="Back" textFill="#831010">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Button fx:id="logoutbutton" blendMode="MULTIPLY" layoutX="971.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutUser" prefHeight="25.0" prefWidth="20.0" />
+   </children>
+</AnchorPane>
